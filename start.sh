@@ -1,2 +1,3 @@
 #!/bin/sh
-echo 11111
+echo 'start jenkins'
+java -jar jenkins.war --httpPort=8084
