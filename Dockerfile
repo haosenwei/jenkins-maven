@@ -5,7 +5,7 @@ MAINTAINER haosenwei
 # A streamlined jre
 ADD . /g4m/jenkins/
 
-RUN cp -R maven3 /usr/local/bin
+RUN cp -R /g4m/jenkins/maven3 /usr/local/bin
 RUN export PATH=/usr/local/bin/maven3/bin:$PATH
 RUN ln -s /usr/local/bin/maven3/bin/mvn /usr/local/bin/mvn
 #RUN ls -l /usr/local/bin
