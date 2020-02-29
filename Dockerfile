@@ -10,6 +10,7 @@ RUN export PATH=/usr/local/bin/maven3/bin:$PATH
 RUN ln -s /usr/local/bin/maven3/bin/mvn /usr/local/bin/mvn
 #RUN ls -l /usr/local/bin
 RUN echo $PATH
+RUN chmod a+x /usr/local/bin/mvn
 
 EXPOSE 8080
 
