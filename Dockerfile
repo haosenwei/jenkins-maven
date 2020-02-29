@@ -8,6 +8,7 @@ ADD . /g4m/jenkins/
 ENV MAVEN_HOME /g4m/jenkins/maven3/bin
 EXPOSE 8080
 
+
 # run container with base path:/opt
 WORKDIR /g4m/jenkins
 CMD ["sh","start.sh"]
