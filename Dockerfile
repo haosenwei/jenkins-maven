@@ -5,9 +5,13 @@ MAINTAINER haosenwei
 # A streamlined jre
 ADD . /g4m/jenkins/
 
-ENV MAVEN_HOME /g4m/jenkins/maven3/bin
-EXPOSE 8080
+RUN cp -R apache-maven3 /usr/local/bin
+RUN export PATH=/usr/local/bin/maven3/bin:$PATH
+RUN ln -s /usr/local/bin/maven3/bin/mvn /usr/local/bin/mvn
+#RUN ls -l /usr/local/bin
+RUN echo $PATH
 
+EXPOSE 8080
 
 # run container with base path:/opt
 WORKDIR /g4m/jenkins
