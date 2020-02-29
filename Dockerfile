@@ -7,7 +7,7 @@ ADD jenkins.war /g4m/jenkins/
 ADD apache-maven-3.6.2-bin.zip /g4m/jenkins/
 ADD start.sh /g4m/jenkins/
 
-ENV /g4m/jenkins/maven3/bin
+ENV MAVEN_HOME /g4m/jenkins/maven3/bin
 EXPOSE 8080
 
 # run container with base path:/opt
