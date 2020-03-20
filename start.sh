@@ -1,3 +1,3 @@
 #!/bin/sh
 echo 'start jenkins'
-java -jar jenkins.war
+java -jar jenkins-zh.war
