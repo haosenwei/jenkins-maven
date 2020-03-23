@@ -9,6 +9,6 @@ fi
 echo $version
 docker build -t g4m-jenkins:${version} .
 echo `docker images -a| grep g4m-jenkins | grep ${version} | awk '{print $3}' `
-docker login --username=郝森伟 registry-vpn.cn-beijing.aliyuncs.com -p hao189108
-docker tag `docker images -a| grep g4m-jenkins | grep ${version} | awk '{print $3}' ` registry-vpn.cn-beijing.aliyuncs.com/haosenwei/g4m-jenkins:${version}
-docker push registry-vpn.cn-beijing.aliyuncs.com/haosenwei/g4m-jenkins:${version}
+docker login --username=郝森伟 registry-vpc.cn-beijing.aliyuncs.com -p hao189108
+docker tag `docker images -a| grep g4m-jenkins | grep ${version} | awk '{print $3}' ` registry-vpc.cn-beijing.aliyuncs.com/haosenwei/g4m-jenkins:${version}
+docker push registry-vpc.cn-beijing.aliyuncs.com/haosenwei/g4m-jenkins:${version}
