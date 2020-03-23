@@ -17,4 +17,3 @@ EXPOSE 8080
 # run container with base path:/opt
 WORKDIR /g4m/jenkins
 CMD ["sh","start.sh"]
-
