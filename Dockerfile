@@ -1,5 +1,5 @@
 # using alpine-glibc instead of alpine  is mainly because JDK relies on glibc
-FROM registry.cn-beijing.aliyuncs.com/haosenwei/g4m-jdk:jdk1.8-v28
+FROM registry.cn-beijing.aliyuncs.com/haosenwei/g4m-jdk:jdk1.8-v29
 # author
 MAINTAINER haosenwei
 # A streamlined jre
